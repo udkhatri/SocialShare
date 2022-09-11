@@ -13,7 +13,6 @@
 <!-- About the Project -->
 ## :star2: About the Project
 
-
 <!-- Screenshots -->
 ### :camera: Demo video of the application
 <div align="center"> 
@@ -43,3 +42,48 @@ https://user-images.githubusercontent.com/34532828/189505007-884e062b-263b-45c7-
 - Uers can post pictures in the application
 - Users can view, like and save other user's posts
 - users can view other user's profile by searching their name
+
+
+## Additional steps required to make this project work for you.
+
+> To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)), [Android Studio](https://developer.android.com/studio)(if you want to run on android), [Xcode](https://developer.apple.com/xcode/)(if you want to run on iOS) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/udkhatri/SocialShare.git
+# Go into the repository
+$ cd SocialShare
+```
+> Go to firebase console and create a new project
+> Go to project setting and copy the Firebase configuration code (firebaseConfig)
+> Follow below file structure to create a new file named firebaeConfig.js
+
+    .
+    ├── ...
+    ├── components                  # Open component folder
+    │   ├── Main                    # open main folder
+    │   ├── firebaseConfig.js       # create this new file
+    └── ...
+      
+> After creating this file add below lines to the file
+
+```javascript
+export const firebaseConfig = {
+  // paste the copied code from the firebae console
+  ...
+  ...
+};
+```
+> Open terminal at the root folder and type bellow command in terminal
+```
+npm install
+expo start
+```
+> you will see a QR code in your terminal scan that from your device and app will be runnning to your phone
+
+
+## You may also like...
+
+- [Weather app in iOS](https://github.com/udkhatri/WeatherAppIos) 
+- [tikTok clone in react native](https://github.com/udkhatri/TikTokClone)
+- [recepie finding sand saving progressive web app](https://github.com/udkhatri/PWAProject)
